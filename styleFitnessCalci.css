@@ -1,0 +1,240 @@
+ /* CSS Reset */
+ * {
+     margin: 0;
+     font-family: 'Trochut', cursive;
+     font-family: 'Ysabeau Infant', sans-serif;
+     border: border-box;
+ }
+
+ header {
+     background-color: #15616d;
+     border: none;
+     display: flex;
+     color: white;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.95rem;
+     height: 58px;
+     z-index: 1;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+ }
+
+ .left img {
+    height: 55px;
+    width: 55px;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+}
+
+.mid {
+    font-size: 2.5rem;
+    text-decoration: underline rgb(192, 7, 7);
+    color: black;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+    margin-left: 21rem;
+    text-align: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    display: inline;
+    margin: 5px;
+    padding-right: 0.85rem;
+    font-weight: 250;
+}
+
+.right a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline burlywood;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 600;
+}
+ /* Main css */
+ main {
+     padding-top: 90px;
+     background-color: #fdf1decc;
+     background-size: cover;
+     height: 1800px;
+     background-repeat: no-repeat;
+     display: block;
+     justify-content: flex-end;
+ }
+
+ h1 {
+     text-align: center;
+     margin: 45px 350px 0px 350px ;
+     padding: 10px;
+     border: 1px dashed gray;
+     background-color: bisque;
+ }
+
+ .container {
+     margin : 50px 200px 10px 200px;
+     padding: 30px;
+     border: 1px dashed gray;
+     background-color: bisque;
+ }
+
+ .box1,
+ .box2,
+ .box3 {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     margin-bottom: 50px;
+     font-weight: 600;
+ }
+
+ .box1 img,
+ .box2 img,
+ .box3 img {
+     margin-top: 30px;
+     margin-left: 30px;
+     height: 200px;
+     width: 300px;
+     box-shadow: 10px 10px 10px black;
+ }
+
+ hr {
+     color: black;
+     height: 1px;
+     background-color: black;
+ }
+
+ /* Footer  */
+ footer {
+     text-align: center;
+     position: relative;
+     padding-top: 150px;
+     background-color: #fdf1decc;
+     font-weight: 600;
+ }
+
+ footer a {
+     text-decoration: none;
+     color: black;
+     background-color: rgb(241, 134, 152);
+     margin: 10px 0px 20px 0;
+     border-radius: 10px;
+     padding: 5px 15px 5px 15px;
+     font-size: 1.5rem;
+ }
+
+ footer a:hover {
+     color: yellow;
+     background-color: #15616d;
+     box-shadow: 10px 10px 10px black;
+ }
+
+ footer p {
+     padding: 15px 0px 15px 0px;
+     font-size: 1.2rem;
+ }
+
+ /* Media Query */
+@media (max-width: 600px) 
+{
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        height: 25px;
+        padding :10px;
+        margin: 0px;
+    }
+     .left img{
+        margin:0px;
+        padding-top: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    .mid{
+         height:15px;
+         margin: 0px;
+         padding:7.5px;
+         font-size: 0.6rem;
+         font-weight: 600;
+    }
+    .right a {
+        height: 15px;
+        padding :0px;
+        margin: 0px;
+        font-size: 0.35rem;
+    }
+
+    /* main */
+    main {
+        padding-top :50px;
+        margin-top :0px;
+        height : 1600px;
+    }
+    h1 {
+        text-align: center;
+        margin: 10px ;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+   
+    .container {
+        margin : 10px;
+        padding: 30px;
+        font-size: 0.55rem;
+    }
+   
+    .box1,
+    .box2,
+    .box3 {
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+   
+    .box1 img,
+    .box2 img,
+    .box3 img {
+        margin: 10px 60px 10px 60px;
+        height: 100px;
+        width: 60%;
+        box-shadow: 10px 10px 10px black;
+    }
+   
+    hr {
+        color: black;
+        height: 1px;
+        background-color: black;
+    }
+   
+
+
+      /* Footer  */
+      footer {
+        padding :0px;
+        position: absolute;
+        bottom: -540px;
+        width: 100%;
+        height: 40px;
+     }
+     footer a{
+        height: 10px;
+        font-size: 0.55rem;
+        padding-top: 2px;
+        margin-top: 0px;
+     }
+     footer p{
+        margin :px;
+        padding-bottom: 20px;
+        font-size: 0.55rem;
+     }
+}

@@ -1,0 +1,352 @@
+ /* CSS Reset */
+ * {
+     margin: 0;
+     font-family: 'Trochut', cursive;
+     font-family: 'Ysabeau Infant', sans-serif;
+     border: border-box;
+ }
+
+ header {
+     background-color: #15616d;
+     border: none;
+     display: flex;
+     color: white;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.95rem;
+     height: 58px;
+     z-index: 1;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+ }
+
+ .left img {
+     height: 55px;
+     width: 55px;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+ }
+
+ .mid {
+     font-size: 2.5rem;
+     text-decoration: underline rgb(192, 7, 7);
+     color: black;
+     padding: 0px 10px 0px 10px;
+     background-color: white;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+     margin-left: 21rem;
+     text-align: center;
+ }
+
+ .right a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-size: 1.2rem;
+     display: inline;
+     margin: 5px;
+     padding-right: 0.85rem;
+     font-weight: 250;
+ }
+
+ .right a:hover {
+     color: rgb(0, 0, 0);
+     background-color: rgb(255, 255, 255);
+     text-decoration: underline burlywood;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+     padding-left: 5px;
+     padding-right: 5px;
+     font-weight: 600;
+ }
+
+ /* CSS For Main */
+ main {
+     padding-top: 120px; 
+     background-color: #fdf1decc; /*ffecd1cc*/
+     background-size: cover;
+     height: 1800px;
+     background-repeat: no-repeat;
+     text-align: center;
+     
+ }
+  .heading {
+    margin: 30px 350px 0px 350px ;
+     padding: 10px;
+    border: 1px dashed gray;
+    border-bottom: none;
+    background-color: bisque;
+  }
+ .para1 {
+    margin: 0px 350px 0px 350px ;
+     padding: 10px;
+    border: 1px dashed gray;
+    border-top: none;
+    background-color: bisque;
+    font-weight: 600;
+    font-size: 1.2rem;
+ }
+ .quote1 {
+    margin: 0px 350px 20px 350px ;
+    padding: 10px;
+ }
+
+ @keyframes quote_shift {
+     from {
+         width: 100px;
+     }
+
+     to {
+         width: 300px;
+     }
+ }
+
+ .quote1 img {
+     background-size: cover;
+     margin-top: 30px;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+     animation: quote_shift 2s ease-in 1ms 1;
+ }
+ .benefits {
+    border: 1px dashed gray;
+    margin : 50px 200px 10px 200px;
+    padding: 10px;
+    background-color:bisque;
+ }
+
+ .benefits ul {
+     display: block;
+     justify-content: center;
+     text-align: center;
+     list-style-type: none;
+     margin-top: 20px;
+     font-size: 1.5rem;
+ }
+
+ .benefits h2 {
+     text-align: center;
+     font-size: 2.5rem;
+ }
+ .benefits img {
+     background-size: cover;
+     height: 100px;
+     margin: 10px;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+ }
+ 
+ /* Form to register for online classes */
+  .container {
+     margin: 50px 350px 20px 350px ;
+     padding: 10px;
+      border-radius: 10px;
+      color: rgb(31, 27, 27);
+      border: 1px dashed gray;
+      display: block;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(241, 134, 152);
+      box-shadow: 10px 10px 10px rgb(29, 26, 26);
+      z-index: 0;
+      height: 450px;
+  }
+
+ .form-group input{
+    display: block;
+    text-align: center;
+    margin: 15px 80px 10px 140px;
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 800;
+ }
+ .btn{
+    border-radius: 10px;
+    padding: 10px 30px;
+ }
+ .container:hover {
+     color: rgb(253, 238, 25);
+     background-color: #48858f;
+ }
+
+ .container input:hover,
+ .btn:hover {
+     background-color: rgb(250, 195, 247);
+ }
+
+ /* Footer  */
+ footer {
+     text-align: center;
+     height: 100px;
+     background-color: #fdf1decc;
+     font-weight: 600;
+ }
+
+ footer a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(241, 134, 152);
+    margin: 10px 0px 20px 0;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: yellow;
+    background-color: #15616d;
+    box-shadow: 10px 10px 10px black;
+}
+
+ footer p {
+     padding-top: 5px;
+     font-size: 1.2rem;
+ }
+
+ @media (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        height: 25px;
+        padding :10px;
+        margin: 0px;
+    }
+     .left img{
+        margin:0px;
+        padding-top: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    .mid{
+         height:15px;
+         margin: 0px;
+         padding:7.5px;
+         font-size: 0.6rem;
+         font-weight: 600;
+    }
+    .right a {
+        height: 15px;
+        padding :0px;
+        margin: 0px;
+        font-size: 0.4rem;
+    }
+    main {
+        height: 1400px;
+        margin-top : 5px;
+        padding-top: 50px;
+    }
+    .heading {
+        margin: 0px 30px 0px 30px ;
+        padding: 10px;
+        font-size :0.55rem;
+      }
+     .para1 {
+        margin: 0px 30px 0px 30px ;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 0.85rem;
+     }
+     .quote1 {
+        margin: 0px 30px 20px 30px ;
+        padding: 10px;
+
+     }
+     @keyframes quote_shift {
+        from {
+            width: 50px;
+        }
+   
+        to {
+            width: 140px;
+        }
+    }
+     .quote1 img {
+         background-size: cover;
+         margin-top: 20px;
+         height: 80px;
+         width :140px;
+         box-shadow: 10px 10px 10px rgb(34, 34, 34);
+         animation: quote_shift 1.5s ease-in 1ms 1;
+     }
+
+     .benefits {
+        border: 1px dashed gray;
+        margin : 20px 30px 10px 30px;
+        padding: 10px;
+        background-color:bisque;
+     }
+    
+     .benefits ul {
+         display: block;
+         justify-content: center;
+         text-align: center;
+         list-style-type: none;
+         margin-top: 20px;
+         font-size: 0.9rem;
+         font-weight: 600;
+     }
+    
+     .benefits h2 {
+         text-align: center;
+         font-size: 1rem;
+     }
+     .benefits img {
+         background-size: cover;
+         height: 50px;
+         margin: 10px;
+         box-shadow: 10px 10px 10px rgb(34, 34, 34);
+     }
+     
+     /* Form to register for online classes */
+      .container {
+         margin: 20px 40px 20px 40px ;
+         padding: 10px;
+         border-radius: 10px;
+          height: 400px;
+          font-size: 0.5rem;
+      }
+    
+     .form-group input{
+        display: block;
+        text-align: center;
+        margin: 15px;
+        padding: 5px 20px 5px 40px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+     }
+     .btn{
+        border-radius: 10px;
+        padding: 10px 30px;
+     }
+     .container:hover {
+         color: rgb(253, 238, 25);
+         background-color: #48858f;
+     }
+    
+     .container input:hover,
+     .btn:hover {
+         background-color: rgb(250, 195, 247);
+     }
+    
+     /* Footer  */
+     footer {
+        position: absolute;
+        bottom: -547px;
+        width: 100%;
+        height: 40px;
+        background-color: #48858f;
+     }
+     footer a{
+        height: 10px;
+        font-size: 0.55rem;
+        padding-top: 2px;
+        margin-top: 0px;
+     }
+     footer p{
+        margin :px;
+        padding-bottom: 20px;
+        font-size: 0.55rem;
+     }
+
+ }

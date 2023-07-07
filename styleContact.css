@@ -1,0 +1,210 @@
+ /* CSS Reset */
+ * {
+    margin: 0;
+    font-family: 'Trochut', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
+    border: border-box;
+}
+
+header {
+    background-color: #15616d;
+    border: none;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.95rem;
+    height: 58px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.left img {
+    height: 55px;
+    width: 55px;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+}
+
+.mid {
+    font-size: 2.5rem;
+    text-decoration: underline rgb(192, 7, 7);
+    color: black;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+    margin-left: 21rem;
+    text-align: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    display: inline;
+    margin: 5px;
+    padding-right: 0.85rem;
+    font-weight: 250;
+}
+
+.right a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline burlywood;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight : 600;
+}
+
+/* CSS For Main */
+main {
+    padding-top: 120px; 
+    background-color: #fdf1decc; /*ffecd1cc*/
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+h1 {
+    margin: 20px 350px 0px 350px ;
+   padding: 10px;
+   border: 1px dashed gray;
+   background-color: bisque;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin : 50px 200px 10px 200px;
+    height: 400px;
+    font-size: 1.5rem;
+    border: 1px dashed gray;
+    background-color: bisque;
+    font-weight: 600;
+}
+
+td,th{
+    text-align: left;
+    padding: 0px 50px 0px 50px;
+    border: 1px dotted gray;
+    background-color: #fcebcfcc;
+    box-shadow: 10px 10px 10px rgb(34, 34, 34);
+}
+/* footer */
+
+footer {
+    text-align: center;
+    position: relative;
+    padding-top: 270px;
+    background-color: #fdf1decc;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(241, 134, 152);
+    margin: 10px 0px 20px 0;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: yellow;
+    background-color: #15616d;
+    box-shadow: 10px 10px 10px black;
+}
+
+footer p {
+    padding: 15px 0px 15px 0px;
+    font-size: 1.2rem;
+}
+
+/* Media Query */
+@media (max-width: 600px) 
+{
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        height: 25px;
+        padding :10px;
+        margin: 0px;
+    }
+     .left img{
+        margin:0px;
+        padding-top: 5px;
+        height: 30px;
+        width: 30px;
+    }
+    .mid{
+         height:15px;
+         margin: 0px;
+         padding:7.5px;
+         font-size: 0.6rem;
+         font-weight: 600;
+    }
+    .right a {
+        height: 15px;
+        padding :0px;
+        margin: 0px;
+        font-size: 0.35rem;
+    }
+
+    /* main */
+    main {
+        padding-top :50px;
+        margin-top :0px;
+        height : 900px;
+    }
+    h1 {
+        margin: 10px ;
+       padding: 10px;
+       font-size: 0.99rem;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin : 10px;
+        height: 400px;
+        font-size: 1.5rem;
+        border: 1px dashed gray;
+        background-color: bisque;
+        font-weight: 600;
+    }
+    
+    td,th{
+        text-align: left;
+        padding: 0px 10px 0px 10px;
+        font-size: 0.55rem;
+        width :100px;
+    }
+
+      /* Footer  */
+      footer {
+        padding :0px;
+        position: absolute;
+        top : 600px;
+        width: 100%;
+        height: 30px;
+     }
+     footer a{
+        height: 10px;
+        font-size: 0.55rem;
+        padding-top: 2px;
+        margin-top: 0px;
+     }
+     footer p{
+        margin :px;
+        padding-bottom: 20px;
+        font-size: 0.55rem;
+     }
+}
